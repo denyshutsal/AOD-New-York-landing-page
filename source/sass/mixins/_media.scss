@@ -1,0 +1,64 @@
+// Grid breakpoints (not for use with bootstrap!)
+
+// min-width (mobile-first):
+// xs: 0
+// sm: 576px
+// md: 768px
+// lg: 992px
+// xl: 1200px
+
+// min-width (desktop-first):
+// xs-d: 575.98px
+// sm-d: 767.98px
+// md-d: 991.98px
+// lg-d: 1199.98px
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+@mixin min($size) {
+  @if $size == 'sm' {
+    @media (min-width: $sm) {
+      @content;
+    }
+  } @else if $size == 'md' {
+    @media (min-width: $md) {
+      @content;
+    }
+  } @else if $size == 'lg' {
+    @media (min-width: $lg) {
+      @content;
+    }
+  } @else if $size == 'xl' {
+    @media (min-width: $xl) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $size) {
+      @content;
+    }
+  }
+}
+
+@mixin max($size) {
+  @if $size == 'xs' {
+    @media (max-width: $xs-d) {
+      @content;
+    }
+  } @else if $size == 'sm' {
+    @media (max-width: $sm-d) {
+      @content;
+    }
+  } @else if $size == 'md' {
+    @media (max-width: $md-d) {
+      @content;
+    }
+  } @else if $size == 'lg' {
+    @media (max-width: $lg-d) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $size) {
+      @content;
+    }
+  }
+}

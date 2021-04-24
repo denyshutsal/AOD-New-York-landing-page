@@ -1,0 +1,7 @@
+// double-border
+
+@mixin double-border {
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 0 1px var(--black);
+  outline: 3px solid var(--black);
+}

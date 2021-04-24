@@ -1,0 +1,26 @@
+footer.footer
+  .container
+    .row.align-items-md-center
+      .col-md-4.footer__col.footer__col--1
+        p.footer__text AOD New York
+        address.footer__address 2250 Lexington Avenue
+          br
+          | New York, NY 10035 -
+          a.footer__link(href="mailto:info@domain.com") info@domain.com
+
+      .col-md-4.footer__col
+        ul.footer__list
+          li.footer__item
+            a.footer__link(href="#", target="_blank", rel="noopener noreferrer")
+              +img-picture2("", "23", 'png', alt='Twitter link')
+          li.footer__item
+            a.footer__link(href="#", target="_blank", rel="noopener noreferrer")
+              +img-picture2("", "22", 'png', alt='Facebook link')
+          li.footer__item
+            a.footer__link(href="#", target="_blank", rel="noopener noreferrer")
+              +img-picture2("", "21", 'png', alt='Pinterest link')
+
+      .col-md-4.footer__col.footer__col--3
+        p.footer__text.footer__text--small Handcrafted by
+        .footer__logo
+          +img-picture2("", "24", 'png', alt='Handcrafted by Yebo')

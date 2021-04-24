@@ -1,0 +1,9 @@
+@mixin multi-line-text-truncate($line-height, $lines) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: $line-height; /* fallback */
+  max-height: calc(#{$line-height * $lines}); /* fallback */
+  -webkit-line-clamp: $lines; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}

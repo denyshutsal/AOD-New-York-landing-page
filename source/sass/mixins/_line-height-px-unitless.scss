@@ -1,0 +1,6 @@
+// line-height (px -> unitless value)
+
+@function line-height-calc($font-size, $line-height) {
+  $line-height: $line-height / $font-size;
+  @return $line-height;
+}

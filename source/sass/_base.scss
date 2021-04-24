@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+// Debug tools
+//===========================================
+
+// if you forgot the 'alt' attribute
+
+// img[alt=''],
+// img:not([alt]) {
+//   border: 5px dashed red;
+// }
+
+// search for elements leading to horizontal scrolling
+
+// * {
+//   outline: 1px solid red;
+// }
+
+// * {
+//   background-color: rgba(255, 0, 0, 0.2);
+// }
+
+// * * {
+//   background-color: rgba(0, 255, 0, 0.2);
+// }
+
+// * * * {
+//   background-color: rgba(0, 0, 255, 0.2);
+// }
+
+// * * * * {
+//   background-color: rgba(255, 0, 255, 0.2);
+// }
+
+// * * * * * {
+//   background-color: rgba(0, 255, 255, 0.2);
+// }
+
+// * * * * * * {
+//   background-color: rgba(255, 255, 0, 0.2);
+// }
+
+// * * * * * * * {
+//   background-color: rgba(255, 0, 0, 0.2);
+// }
+
+// * * * * * * * * {
+//   background-color: rgba(0, 255, 0, 0.2);
+// }
+
+// * * * * * * * * * {
+//   background-color: rgba(0, 0, 255, 0.2);
+// }

@@ -1,0 +1,16 @@
+section.feedback
+  h2.sr-only Feedback
+  .container
+    .row
+      .col.feedback__wrapper
+
+        a.feedback__link.site-logo(href="/", aria-label="Home page link")
+          +img-picture2("", "logo", "png", "Home page link")
+
+        p.feedback__title Stay on the saddle!
+
+        form.feedback__form(action="#")
+          .feedback__form-group.form-group
+            label.sr-only(for="feedback-email") Email address
+            input#feedback-email.form-control.feedback__input(type="email",  name="email" placeholder="enter your email...", autocomplete="off")
+          button.btn.btn-primary.feedback__btn(type="submit") GO

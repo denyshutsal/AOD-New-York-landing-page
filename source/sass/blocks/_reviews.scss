@@ -1,0 +1,64 @@
+.reviews {
+  padding: 50px 0 30px 0;
+  text-align: center;
+  background-color: $x-color-5;
+
+  @include media-breakpoint-up(xl) {
+    padding: 90px 0 50px 0;
+  }
+
+  &__carousel {
+    padding-bottom: 70px;
+  }
+
+  // carousel indicators
+  li {
+    margin-right: 6px;
+    margin-left: 6px;
+    background-color: transparent;
+    border: 1px solid $x-color-7;
+    border-radius: 50%;
+  }
+
+  // active state of the carousel indicator
+  &__indicator.active {
+    background-color: $x-color-7;
+  }
+
+  &__inner {
+    height: rem(270px);
+  }
+
+  &__icon-wrapper {
+    margin-bottom: 35px;
+
+    img {
+      width: rem(35px);
+      height: auto;
+    }
+  }
+
+  &__author {
+    letter-spacing: 0.1em;
+    margin-bottom: 0.85rem;
+  }
+
+  &__date {
+    margin-left: 0.5rem;
+    font-weight: 300;
+    color: $body-color;
+  }
+
+  &__text {
+    font-size: rem(18px);
+    font-style: italic;
+    margin-bottom: 0;
+
+    @include multi-line-text-truncate(36px, 4);
+  }
+
+  &__next,
+  &__prev {
+    display: none;
+  }
+}

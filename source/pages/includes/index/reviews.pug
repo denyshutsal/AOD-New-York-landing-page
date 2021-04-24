@@ -1,0 +1,41 @@
+section.reviews
+  #carouselExampleIndicators.carousel.slide.reviews__carousel(data-ride="carousel")
+    ol.carousel-indicators
+      li.reviews__indicator.active(data-target="#carouselExampleIndicators", data-slide-to="0")
+      li.reviews__indicator(data-target="#carouselExampleIndicators", data-slide-to="1")
+      li.reviews__indicator(data-target="#carouselExampleIndicators", data-slide-to="2")
+    .carousel-inner.reviews__inner
+
+      .carousel-item.reviews__item.active
+        .container
+          .reviews__icon-wrapper
+            +img-picture2("", "12", "png", "twitter icon")
+          h3.reviews__author AOD New York @aod
+            span.reviews__date / 35min
+          p.reviews__text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+
+      .carousel-item.reviews__item
+        .container
+          .reviews__icon-wrapper
+            +img-picture2("", "12", "png", "twitter icon")
+          h3.reviews__author AOD New York @aod
+            span.reviews__date / 35min
+          p.reviews__text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      .carousel-item.reviews__item
+        .container
+          .reviews__icon-wrapper
+            +img-picture2("", "12", "png", "twitter icon")
+          h3.reviews__author AOD New York @aod
+            span.reviews__date / 35min
+          p.reviews__text.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.ectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.ectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+
+    a.carousel-control-prev.reviews__prev(href="#carouselExampleIndicators", role="button", data-slide="prev")
+      span.carousel-control-prev-icon(aria-hidden="true")
+      span.sr-only Previous
+    a.carousel-control-next.reviews__next(href="#carouselExampleIndicators", role="button", data-slide="next")
+      span.carousel-control-next-icon(aria-hidden="true")
+      span.sr-only Next

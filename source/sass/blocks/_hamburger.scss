@@ -1,0 +1,21 @@
+.hamburger {
+  z-index: $x-zindex-header-hamburger;
+
+  svg {
+    width: rem(30px);
+    height: rem(30px);
+    fill: $teal;
+    transition: fill 0.2s;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: $x-color-2;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}

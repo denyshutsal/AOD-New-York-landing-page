@@ -1,0 +1,17 @@
+{
+  "env": {
+    "es2021": true,
+    "browser": true,
+    "node": true,
+    "jquery": true
+  },
+  "extends": ["airbnb-base", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "globals": {
+    "objectFitImages": "readonly"
+  },
+  "rules": {}
+}

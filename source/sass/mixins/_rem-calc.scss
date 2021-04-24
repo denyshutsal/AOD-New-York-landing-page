@@ -1,0 +1,10 @@
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($font-size-base * 16)}rem;
+}
+
+// .component {
+//   font-size: rem(14px); // or rem(14)
+// }

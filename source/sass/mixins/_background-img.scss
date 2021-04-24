@@ -1,0 +1,27 @@
+// background img
+// x - namespace (to avoid override bootstrap variables)
+
+$x-img-path: '../assets/img/';
+$x-retina-dpi: 144dpi;
+$x-retina-dppx: 1.5dppx;
+
+@mixin background($color, $image-name, $repeat, $position, $size) {
+  background-color: $color;
+  background-image: url($x-img-path + $image-name + '.jpg');
+  background-position: $position;
+  background-repeat: $repeat;
+  background-size: $size;
+}
+
+// background img with retina
+
+@mixin background-with-retina($color, $image-name, $repeat, $position, $size) {
+  background-color: $color;
+  background-image: url($x-img-path + $image-name + '.jpg');
+  background-position: $position;
+  background-repeat: $repeat;
+  background-size: $size;
+  @media (min-resolution: $x-retina-dpi), (min-resolution: $x-retina-dppx) {
+    background-image: url($x-img-path + $image-name + '@2x.jpg');
+  }
+}

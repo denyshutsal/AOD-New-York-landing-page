@@ -1,0 +1,22 @@
+.container-fluid
+  header#header.header
+    .row.justify-content-center
+      .col-lg-10
+
+        a.header__logo.site-logo(href="/", aria-label="Home page link")
+          +img-picture2("", "logo", "png", "Home page link")
+
+        button#hamburger.header__hamburger.btn.hamburger(type="button" aria-label="show/hide menu")
+          svg(xmlns="http://www.w3.org/2000/svg" viewbox="0 0 385 385")
+            path(d="M12 120h361a12 12 0 000-24H12a12 12 0 000 24zm361 60H12a12 12 0 000 25h361a12 12 0 000-25zm0 85H132a12 12 0 000 24h241a12 12 0 000-24z")
+
+        nav#header-nav.header__nav.header-nav
+          ul.header-nav__list
+            li.header-nav__item
+              a.header-nav__link.header-nav__link--active(href="about.html") about us
+            li.header-nav__item
+              a.header-nav__link(href="work.html") work
+            li.header-nav__item
+              a.header-nav__link(href="shop.html") shop
+            li.header-nav__item
+              a.header-nav__link(href="contact.html") contact

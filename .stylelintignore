@@ -1,0 +1,9 @@
+~work/
+bower_components/
+node_modules/
+build/
+source/sass/_mixins.scss/
+**/*.min.css
+**/dist/
+**/vendor/
+/_gh_pages/

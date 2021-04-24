@@ -1,0 +1,34 @@
+section.gallery
+  h2.sr-only Gallery
+  .row.no-gutters
+    //- first column
+    .col-12.col-sm-8.col-md-6.col-lg-4
+      .row.no-gutters
+        .col.gallery__img
+          +img-picture2("", "13", "jpg", "brooks saddle")
+        .col.gallery__img
+          +img-picture2("", "14", "jpg", "brooks saddles")
+      .gallery__img
+        +img-picture2("", "15", "jpg", "brooks saddle")
+
+    //- second column
+    .col-6.col-sm-4.col-md-3.col-lg-2.gallery__img.gallery__img--tall
+      +img-picture2("", "16", "jpg", "bicycle")
+
+    //- third column
+    .col-6.col-sm-4.col-md-3.col-lg-2.gallery__img.gallery__img--tall
+      +img-picture2("", "17", "jpg", "bicycle")
+
+    //- fourth column
+    .col-12.col-sm-8.col-md-6.col-lg-4
+      .gallery__img
+        +img-picture2("", "18", "jpg", "shop")
+      .row.no-gutters
+        .col.gallery__img
+          +img-picture2("", "19", "jpg", "brooks saddle")
+        .col.gallery__img
+          +img-picture2("", "20", "jpg", "brooks bag")
+
+    //- fifth column (button)
+    .col-md-6.col-lg-12.gallery__btn-wrapper
+      a#gallery-btn.btn.gallery__btn(href="#", target="_blank", rel="noopener noreferrer") DISCOVER THE SHOP

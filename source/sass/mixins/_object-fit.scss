@@ -1,0 +1,36 @@
+// This mixin can be used to set the object-fit:
+// @include object-fit(contain);
+// or object-fit and object-position:
+// @include object-fit(cover, top);
+
+@mixin object-fit($fit: cover, $position: null) {
+  object-fit: $fit;
+  @if $position {
+    object-position: $position;
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}
+
+// Fullscreen hero / banner
+// &__img-wrapper {
+//   width: 100%;
+//   min-height: 568px; // iphone 5
+//   background-color: #dbd6df;
+// }
+
+// min-height: 568px; // iphone 5
+// max-height: img-height;
+@mixin object-fit-2($min-height, $max-height, $fit: cover, $position: null) {
+  width: 100%;
+  min-height: #{$min-height}px;
+  max-height: #{$max-height}px;
+  object-fit: $fit;
+  @if $position {
+    object-position: $position;
+    font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+  } @else {
+    font-family: 'object-fit: #{$fit}';
+  }
+}

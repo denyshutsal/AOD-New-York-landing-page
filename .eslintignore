@@ -1,0 +1,10 @@
+**/*.min.js
+**/dist/
+**/vendor/
+/_gh_pages/
+/js/coverage/
+/package.js
+~work/
+bower_components/
+node_modules/
+build/

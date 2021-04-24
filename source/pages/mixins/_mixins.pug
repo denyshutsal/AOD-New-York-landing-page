@@ -1,0 +1,29 @@
+-const img_path = 'assets/img/'
+-const webp_path = 'assets/webp/'
+-const svg_path = 'assets/svg/'
+
+//- Responsive images (mobile, tablet, desktop) with retina and webp
+
+mixin img-picture(img_class, img_name, img_ext='jpg', viewport_tablet='768', viewport_desktop='1200', alt='img')
+  picture
+    source(type="image/webp" media=`(min-width: ${viewport_desktop}px)` srcset=`${webp_path}${img_name}-lg.webp 1x, ${webp_path}${img_name}-lg@2x.webp 2x`)
+    source(type="image/webp" media=`(min-width: ${viewport_tablet}px)` srcset=`${webp_path}${img_name}-md.webp 1x, ${webp_path}${img_name}-md@2x.webp 2x`)
+    source(type="image/webp" srcset=`${webp_path}${img_name}.webp 1x, ${webp_path}${img_name}@2x.webp 2x`)
+    source(media=`(min-width: ${viewport_desktop}px)` srcset=`${img_path}${img_name}-lg.${img_ext} 1x, ${img_path}${img_name}-lg@2x.${img_ext} 2x`)
+    source(media=`(min-width: ${viewport_tablet}px)` srcset=`${img_path}${img_name}-md.${img_ext} 1x, ${img_path}${img_name}-md@2x.${img_ext} 2x`)
+    img(class=`${img_class}`, src=`${img_path}${img_name}.${img_ext}` srcset=`${img_path}${img_name}@2x.${img_ext} 2x` loading="lazy" alt=`${alt}`)
+
+//- Only retina and webp
+
+mixin img-picture2(img_class, img_name, img_ext='jpg', alt='img')
+  picture
+    source(type="image/webp" srcset=`${webp_path}${img_name}.webp 1x, ${webp_path}${img_name}@2x.webp 2x`)
+    img(class=`${img_class}`, src=`${img_path}${img_name}.${img_ext}` srcset=`${img_path}${img_name}@2x.${img_ext} 2x` loading="lazy" alt=`${alt}`)
+
+//- Responsive SVG (mobile, tablet, desktop)
+
+mixin svg-picture(svg_class, svg_name, viewport_tablet='768', viewport_desktop='1200', alt='svg')
+  picture
+    source(media=`(min-width: ${viewport_desktop}px)` srcset=`${svg_path}${svg_name}-lg.svg`)
+    source(media=`(min-width: ${viewport_tablet}px)` srcset=`${svg_path}${svg_name}-md.svg`)
+    img(class=`${svg_class}`, src=`${svg_path}${svg_name}.svg` loading="lazy" alt=`${alt}`)

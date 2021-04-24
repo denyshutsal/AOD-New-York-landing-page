@@ -1,0 +1,42 @@
+.gallery {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: $x-color-8;
+
+  &__img {
+    img {
+      width: 100%;
+      height: 270px;
+      filter: grayscale(95%);
+      transition: all 0.5s ease-out;
+      @include object-fit(cover);
+    }
+
+    &--tall {
+      img {
+        height: 540px;
+      }
+    }
+
+    img:hover {
+      filter: none;
+    }
+  }
+
+  &__btn-wrapper {
+    background-color: $x-color-1;
+    padding: rem(75px) 0;
+    @include flex-row-wrap-center;
+  }
+
+  &__btn {
+    padding: rem(10px) rem(60px);
+    max-width: 286px;
+    font-size: rem(14px);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $body-bg;
+    border: 1px solid $x-color-8;
+  }
+}

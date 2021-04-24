@@ -1,0 +1,13 @@
+.hero {
+  background-color: #dbd6df; // fallback color
+
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 568px; // iphone 5
+      max-height: 800px;
+      @include object-fit(cover);
+    }
+  }
+}

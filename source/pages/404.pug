@@ -1,0 +1,22 @@
+extends common/layout.pug
+
+block title
+  title YEBO Bicycles | Error 404
+
+block header
+  .foo
+
+block content
+  article.page-404
+    h2.sr-only 404 Page
+    .container
+      .row
+        .col
+          .page-404__wrapper
+            .page-404__img
+              +img-picture2("", "404", "jpg", "404 Page img")
+            //- p.page-404__text Ooops!!!
+            a.btn.btn-primary.page-404__btn(href="/", aria-label="Home page link") Home
+
+block footer
+  .foo
