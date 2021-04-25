@@ -4,10 +4,10 @@
 
 Lighthouse Audit in Chrome DevTools:
 
-Desktop
+Desktop\
 ![Lighthouse Audit (Desktop)](https://github.com/denyshutsal/AOD-New-York-landing-page/blob/main/lighthouse%20metrics/Desktop.PNG "Desktop")
 
-Mobile
+Mobile\
 ![Lighthouse Audit (Mobile)](https://github.com/denyshutsal/AOD-New-York-landing-page/blob/main/lighthouse%20metrics/Mobile.PNG "Mobile")
 
 
