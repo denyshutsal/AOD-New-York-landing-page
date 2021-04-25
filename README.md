@@ -1,6 +1,6 @@
 # Проект «AOD New York»
 
-[Демо проекта](...)
+[Демо проекта](https://denyshutsal.github.io/AOD-New-York-landing-page/)
 
 ---
 
