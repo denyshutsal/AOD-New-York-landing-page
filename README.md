@@ -2,6 +2,31 @@
 
 [Демо проекта](https://denyshutsal.github.io/AOD-New-York-landing-page/)
 
+Lighthouse Audit in Chrome DevTools:
+
+Desktop
+![Lighthouse Audit (Desktop)](https://github.com/denyshutsal/AOD-New-York-landing-page/blob/main/lighthouse%20metrics/Desktop.PNG "Desktop")
+
+Mobile
+![Lighthouse Audit (Mobile)](https://github.com/denyshutsal/AOD-New-York-landing-page/blob/main/lighthouse%20metrics/Mobile.PNG "Mobile")
+
+
+## Стек
+
+- Bootstrap 4
+- Adaptive layout
+- JQuery
+- Flexbox
+- BEM naming
+- SCSS
+- Pug
+- Gulp
+- Adaptive images (picture + srcset)
+- Retina + Webp
+- Git
+
+- Поддержка Internet Explorer 11
+
 ---
 
 ## Установка
