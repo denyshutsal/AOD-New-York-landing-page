@@ -1,4 +1,4 @@
-#«AOD New York»
+# «AOD New York»
 
 [Демо проекта](https://denyshutsal.github.io/AOD-New-York-landing-page/)
 
